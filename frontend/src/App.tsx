@@ -1,10 +1,15 @@
 import React from 'react'
+import Home from './pages/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App:React.FC = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+    </Router>
+   
   )
 }
 
