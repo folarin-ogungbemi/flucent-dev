@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --pry-col: #fff; /* White color */
+        --sec-col: #000; /* Accent color */
+        --links: #333;
+        --links-hover: #000;
+        --button-bg-pry-col: #fff;
+        --button-bg-sec-col: #000;
+        --section-divide: #ddd; /* Light gray*/
+        --complementary-color: #9a6aa8;
+    }
+}
