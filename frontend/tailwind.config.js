@@ -10,6 +10,7 @@ export default {
         skin:{
           pry_text:'var(--pry-col)',
           sec_text:'var(--sec-col)',
+          complement_text:'var(--complementary-col)',
           link:'var(--links)',
           link_hover:'var(--links-hover)',
           btnText:'var(--button-text-col)',
@@ -24,6 +25,7 @@ export default {
         skin:{
           button_bg_pry:'var(--button-bg-pry-col)',
           button_bg_sec:'var(--button-bg-sec-col)',
+          complement_bg:'var(--complementary-col)',
           pry_bg:'var(--pry-col)',
           sec_bg:'var(--sec-col)',
           
