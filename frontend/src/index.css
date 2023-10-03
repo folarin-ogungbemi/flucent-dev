@@ -6,11 +6,36 @@
     :root {
         --pry-col: #fff; /* White color */
         --sec-col: #000; /* Accent color */
-        --links: #333;
+        --links: #666;
         --links-hover: #000;
         --button-bg-pry-col: #fff;
         --button-bg-sec-col: #000;
         --section-divide: #ddd; /* Light gray*/
         --complementary-col: #ddd;
     }
+}
+
+.underline-nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--links-hover);
+    transition: all 450ms ease-in-out;
+}
+
+.underline-nav-link:hover::after,
+.underline-nav-link.active::after {
+    width: 100%;
+}
+
+.underline-nav-link.active {
+    background: var(--links-hover);
 }

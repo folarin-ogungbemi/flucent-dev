@@ -11,7 +11,7 @@ const Nav:React.FC = () => {
         <NavLink
             to={`/${nav}`}
             key={navIndex}
-            className='capitalize'>
+            className='capitalize font-medium h-fit underline-nav-link text-skin-link hover:text-skin-link_hover'>
             {nav}
         </NavLink>)}
     </nav>
