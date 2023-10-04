@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from './pages/Home'
+import Studio from "./pages/Studio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App:React.FC = () => {
@@ -7,6 +8,7 @@ const App:React.FC = () => {
     <Router>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/studio' element={<Studio/>}/>
       </Routes>
     </Router>
    
